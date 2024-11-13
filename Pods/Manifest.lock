@@ -1,0 +1,97 @@
+PODS:
+  - Alamofire (4.9.1)
+  - Cosmos (25.0.1)
+  - CountryPickerView (3.3.0)
+  - DropDown (2.3.13)
+  - FSCalendar (2.8.4)
+  - Gallery (2.4.0)
+  - LanguageManager-iOS (1.2.9)
+  - libwebp (1.3.2):
+    - libwebp/demux (= 1.3.2)
+    - libwebp/mux (= 1.3.2)
+    - libwebp/sharpyuv (= 1.3.2)
+    - libwebp/webp (= 1.3.2)
+  - libwebp/demux (1.3.2):
+    - libwebp/webp
+  - libwebp/mux (1.3.2):
+    - libwebp/demux
+  - libwebp/sharpyuv (1.3.2)
+  - libwebp/webp (1.3.2):
+    - libwebp/sharpyuv
+  - MyFatoorah (2.0.152)
+  - OTPFieldView (1.0.1)
+  - R.swift (5.4.0):
+    - R.swift.Library (~> 5.3.0)
+  - R.swift.Library (5.3.0)
+  - SDWebImage/Core (4.4.8)
+  - SDWebImage/WebP (4.4.8):
+    - libwebp (< 2.0, >= 0.5)
+    - SDWebImage/Core
+  - SkeletonView (1.30.4)
+  - ZegoExpressEngine (3.17.0)
+  - ZegoPluginAdapter (2.5.3)
+  - ZegoUIKit (2.12.1):
+    - ZegoExpressEngine (>= 3.15.0)
+    - ZegoPluginAdapter (>= 2.5.2)
+  - ZegoUIKitPrebuiltCall (2.12.5):
+    - ZegoUIKit (>= 2.12.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 4.9.1)
+  - Cosmos
+  - CountryPickerView
+  - DropDown
+  - FSCalendar
+  - Gallery
+  - LanguageManager-iOS
+  - MyFatoorah
+  - OTPFieldView
+  - R.swift (~> 5.4.0)
+  - SDWebImage/WebP
+  - SkeletonView
+  - ZegoUIKitPrebuiltCall
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - Cosmos
+    - CountryPickerView
+    - DropDown
+    - FSCalendar
+    - Gallery
+    - LanguageManager-iOS
+    - libwebp
+    - MyFatoorah
+    - OTPFieldView
+    - R.swift
+    - R.swift.Library
+    - SDWebImage
+    - SkeletonView
+    - ZegoExpressEngine
+    - ZegoPluginAdapter
+    - ZegoUIKit
+    - ZegoUIKitPrebuiltCall
+
+SPEC CHECKSUMS:
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
+  Cosmos: 02db0a1c953107049bfd2d7af19ceef55ecb7e98
+  CountryPickerView: 6322ada32a80b0cd721b0267282a5c24f406f263
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  FSCalendar: 2d1d0d9398f12d439f55c1fe0f01525b151b8260
+  Gallery: b7fc1aeb68a39ad6d2c423574750196bf9b25e5c
+  LanguageManager-iOS: c1dbb2329fc4b8c0dbc0b0d386a11ea9553a359b
+  libwebp: 1786c9f4ff8a279e4dac1e8f385004d5fc253009
+  MyFatoorah: 915fbab8262731b710b9512500ac8a7205e771b0
+  OTPFieldView: 700a752fe62c41d1c4914c78aa500fb30d97c255
+  R.swift: c533450b0f7dc494e0993f5f1a1db925d84c3006
+  R.swift.Library: 0fc583cb55a99e28901299cc451614cad1161962
+  SDWebImage: 783af2c3fa36291a250030c4752ee370a9a51d13
+  SkeletonView: 5a050f6411e697abd4cda0a8d767013399dccd69
+  ZegoExpressEngine: a3448dde37f79ca7f2e8817031cd83f2346cf92e
+  ZegoPluginAdapter: 46ed403eac92c61281b1d76ef8c2e4fb94cf9717
+  ZegoUIKit: 5a4f0dd362b4a5a6cd0bb42c89df9b22f35e487d
+  ZegoUIKitPrebuiltCall: 612f15dd3fe69d65f0e1bfcff17d5b7423f9ec42
+
+PODFILE CHECKSUM: 974e4f76a81f67dd702edac385a5046e43ed85f9
+
+COCOAPODS: 1.15.2

@@ -1,0 +1,18 @@
+${PODS_ROOT}/Target Support Files/Pods-DoctorApp/Pods-DoctorApp-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework
+${BUILT_PRODUCTS_DIR}/Cosmos/Cosmos.framework
+${BUILT_PRODUCTS_DIR}/CountryPickerView/CountryPickerView.framework
+${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework
+${BUILT_PRODUCTS_DIR}/FSCalendar/FSCalendar.framework
+${BUILT_PRODUCTS_DIR}/Gallery/Gallery.framework
+${BUILT_PRODUCTS_DIR}/LanguageManager-iOS/LanguageManager_iOS.framework
+${BUILT_PRODUCTS_DIR}/OTPFieldView/OTPFieldView.framework
+${BUILT_PRODUCTS_DIR}/R.swift.Library/Rswift.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/SkeletonView/SkeletonView.framework
+${BUILT_PRODUCTS_DIR}/ZegoPluginAdapter/ZegoPluginAdapter.framework
+${BUILT_PRODUCTS_DIR}/ZegoUIKit/ZegoUIKit.framework
+${BUILT_PRODUCTS_DIR}/ZegoUIKitPrebuiltCall/ZegoUIKitPrebuiltCall.framework
+${BUILT_PRODUCTS_DIR}/libwebp/libwebp.framework
+${PODS_XCFRAMEWORKS_BUILD_DIR}/MyFatoorah/MFSDK.framework/MFSDK
+${PODS_XCFRAMEWORKS_BUILD_DIR}/ZegoExpressEngine/ZegoExpressEngine.framework/ZegoExpressEngine

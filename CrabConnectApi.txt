@@ -1,0 +1,210 @@
+Base Url  == https://techimmense.in/crabconnect/webservice/
+
+       @GET("login") // done
+    Call<ResponseBody> login(@QueryMap HashMap<String, String> map);
+  param.put("mobile",binding.emailEt.getText().toString());
+        param.put("password",binding.passwordEt.getText().toString());
+        param.put("register_id",FireBaseToken);
+        param.put("lat",""+lat);
+        param.put("lon",""+lon);
+
+
+    @GET("signup") //done
+    Call<ResponseBody> signup(@QueryMap HashMap<String, String> map);
+paramdata.put("mobile",number);
+        paramdata.put("country_id",countryid);
+        paramdata.put("country_name",countryname);
+        paramdata.put("cat_id",category_id);
+        paramdata.put("cat_name",category_name);
+        paramdata.put("mobile_with_code",mobile_str_with_code);
+        paramdata.put("first_name",binding.firstName.getText().toString());
+        paramdata.put("last_name",binding.lastName.getText().toString());
+        paramdata.put("email",binding.emailEt.getText().toString());
+        paramdata.put("password",binding.passwordEt.getText().toString());
+        paramdata.put("register_id",""+FireBaseToken);
+        paramdata.put("ios_register_id","");
+        paramdata.put("type",""+account_type);
+        paramdata.put("gender",""+gender_str);
+
+        paramdata.put("address",binding.areaNameTv.getText().toString());
+        paramdata.put("lat",""+lat);
+        paramdata.put("lon",""+lon);
+        paramdata.put("cancer_type","");
+        paramdata.put("cancer_subtypeid","");
+        paramdata.put("cancer_subtypename","");
+        paramdata.put("university_name",""+binding.universityEt.getText().toString());
+        paramdata.put("dob",""+binding.birthdatetxt.getText().toString());
+
+
+
+
+ 
+    @GET("get_cancer_type?")
+    Call<ResponseBody> getCancertype(@Query("user_id") String userID);
+
+    //https://techimmense.in/crabconnect/webservice/get_cancer_sub_type?category_id=1
+    @GET("get_cancer_sub_type?")
+    Call<ResponseBody> getCancerSubtype(@Query("category_id") String category_id);
+
+     @GET("user_update_cancer_type?") 
+    Call<ResponseBody> updateCancerType(@QueryMap HashMap<String, String> map);
+ param.put("user_id",""+session.getUserID());
+        param.put("cat_id",cancer_type_id);
+        param.put("cat_name",cancer_type_name);
+        param.put("cat_name_ar",cancer_type_name_ar);
+        param.put("cat_name_bng",cancer_type_name_bng);
+        param.put("sub_cat_id",sub_cat_id);
+        param.put("sub_cat_name",""+sub_cat_name);
+        param.put("sub_cat_name_ar",""+sub_cat_name_ar);
+        param.put("sub_cat_name_bng",""+sub_cat_name_bng);
+
+
+
+    @GET("verify_number?") //done
+    Call<ResponseBody> verifyOtp(@QueryMap HashMap<String, String> map);
+
+
+ @Multipart
+    @POST("user_update_profile")
+    Call<ProfileResponse> updateProfile(@QueryMap HashMap<String, String> map, @Part MultipartBody.Part filePart);
+ param.put("user_id", session.getUserID());
+        //  param.put("token",session.getUserDetails().getToken());
+        param.put("first_name", binding.firstName.getText().toString());
+        param.put("last_name", binding.lastName.getText().toString());
+        param.put("mobile", binding.phoneEt.getText().toString());
+        param.put("cat_id", category_id);
+        param.put("cat_name", category_name);
+        param.put("university_name", "" + binding.universityEt.getText().toString());
+        param.put("lat", "");
+        param.put("lon", "");
+
+
+
+    @Multipart
+    @POST("provider_update_profile") //done
+    Call<ProfileResponse> updateDoctorProfile(@QueryMap HashMap<String, String> map, @Part MultipartBody.Part filePart);
+ param.put("user_id", session.getUserID());
+        //  param.put("token",session.getUserDetails().getToken());
+        param.put("first_name", binding.firstName.getText().toString());
+        param.put("last_name", binding.lastName.getText().toString());
+        param.put("mobile", binding.phoneEt.getText().toString());
+        param.put("cat_id", category_id);
+        param.put("cat_name", category_name);
+        param.put("university_name", "" + binding.universityEt.getText().toString());
+        param.put("experience_year", "" + binding.experienceEt.getText().toString());
+        param.put("consultant_fees", "" + binding.feesEt.getText().toString());
+        param.put("lat", "");
+        param.put("lon", "");
+
+
+
+    @GET("get_profile?") //done
+    Call<ResponseBody> getProfile(@Query("user_id") String userID);
+
+  
+
+    @GET("get_provider_list?") //done
+    Call<ResponseBody> getAllDoctors(@QueryM ap HashMap<String, String> map);
+param.put("user_id", session.getUserID());
+        param.put("address", "");
+        param.put("lat", "");
+        param.put("lon", "");
+
+
+    //https://techimmense.in/crabconnect/webservice/get_provider_details?provider_id=97
+      @GET("get_provider_details?") //done
+    Call<ResponseBody> getDoctorDetail(@Query("user_id") String userID, @Query("provider_id") String provider_id,@Query("lat") String lat,@Query("lon") String lon);
+
+
+
+   @GET("get_user_book_appointment_list?") //done
+    Call<ResponseBody> getUserOrders(@QueryMap HashMap<String, String> map);
+param.put("user_id", session.getUserID());
+        param.put("status", type);
+
+
+
+    @GET("provider_add_time?") //done
+    Call<ResponseBody> updateAvailability(@QueryMap HashMap<String, String> map);
+ param.put("user_id", session.getUserID());
+        param.put("provider_id", session.getUserID());
+        param.put("authorization_token", "");
+        param.put("open_day", day_name_str);
+        param.put("open_time", open_time_str);
+        param.put("close_time", close_time_str);
+        param.put("open_close_status", open_status_str);
+
+
+
+
+
+    @GET("get_provider_details?") //done
+    Call<ResponseBody> getProviderProfile(@Query("provider_id") String provider_id);
+
+
+
+    @GET("get_proivder_book_appointment?") //done
+    Call<ResponseBody> getProviderOrders(@QueryMap HashMap<String, String> map);
+ param.put("provider_id", session.getUserID());
+        param.put("status", type);   (Current and Past)
+   
+ @GET("get_country_list?") //done
+    Call<ResponseBody> getCountry(@Query("user_id") String userID);
+
+
+    @GET("get_request_details?") //done
+    Call<ResponseBody> getOrderDetail(@Query("user_id") String userID,@Query("request_id") String request_id);
+
+ @Multipart
+    @POST("add_doctor_degree") //done
+    Call<ResponseBody> uploadDegreeCall(@QueryMap HashMap<String,String>map, @Part MultipartBody.Part filePart);
+  param.put("user_id", session.getUserID());
+        param.put("name", binding.digreeNameEt.getText().toString());
+degree_file
+
+
+
+ @GET("get_doctor_degree?") 
+    Call<ResponseBody> getMyDegree(@Query("user_id") String user_id);
+
+ @Multipart
+    @POST("add_book_appointment")
+    Call<ResponseBody> addAppointment(@QueryMap HashMap<String, String> map,@Part ArrayList<MultipartBody.Part> file3);
+        
+        param.put("user_id", session.getUserID());
+        param.put("provider_id", providerid);
+        param.put("total_amount", successData.getResult().getConsultantFees());
+        param.put("date", "" + binding.clview.getSelectedDate());
+        param.put("time", "" + selected_time_slot_str);
+        param.put("description", "" + binding.descriptionEt.getText().toString());
+        param.put("timezone", "" + Tools.getTimeZone());
+        param.put("payment_type", "Online");
+        param.put("admin_commission", "10");
+        param.put("provider_amount", "90");
+
+
+
+
+
+ @GET("change_password?") //done
+    Call<ResponseBody> changepassword(
+            @Query("user_id") String user_id,
+            @Query("password") String password,
+            @Query("old_password") String old_password);
+
+    @GET("forgot_password?") //done
+    Call<ResponseBody> ForgotCall(@Query("email") String email);
+
+    @GET("send_feedback?")
+    Call<ResponseBody> sendFeedback(
+            @Query("user_id") String user_id,
+            @Query("email") String email,
+            @Query("name") String name,
+            @Query("contact_number") String contact_number,
+            @Query("feedback") String feedback);
+
+
+ @GET("get_time_slot?")
+    Call<ResponseBody> getAvbTimeSlot(@Query("user_id") String user_id, @Query("provider_id") String saloon_id, @Query("now_current_day") String now_current_day, @Query("current_date") String current_date);
+
+
